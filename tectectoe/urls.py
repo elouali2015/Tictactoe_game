@@ -21,7 +21,7 @@ from .views import welcome
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^player/', include('player.urls')),
-    url(r'',welcome),
+    url(r'^$',welcome),
     #url(r'^admin/', admin.site.urls),
     url(r'^admin/', admin.site.urls),
     #url(r'welcome$', welcome)
