@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Title of the document</title>
-</head>
+{% extends "player/base.html" %}
+{% block content %}
+	<h1> hi {{user.username}}</h1>
+	<ul>
+		{% for g in games %}
+		<li>game {{g.id}}:{{g.first_player}} vs {{g.second_player}}</li>
+		{% endfor %}
+	</ul>
 
-<body>
-The content of the document......
-</body>
-
-</html>
+{% endblock %}

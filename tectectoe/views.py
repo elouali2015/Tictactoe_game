@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 
 def welcome(request):
-    #return request(request,"tectectoe/welcome.html")
-    return HttpResponse("hello")
+    return render(request,"tectectoe/home.html")
+    #return HttpResponse("hello")

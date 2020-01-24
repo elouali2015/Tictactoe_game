@@ -19,9 +19,8 @@ from django.conf.urls import include,url
 from . import views
 from .views import welcome
 urlpatterns = [
-    url(r'^polls/', include('polls.urls')),
     url(r'^player/', include('player.urls')),
-    url(r'^$',welcome),
+    url(r'^$',views.welcome),
     #url(r'^admin/', admin.site.urls),
     url(r'^admin/', admin.site.urls),
     #url(r'welcome$', welcome)
